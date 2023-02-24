@@ -1,6 +1,6 @@
 # **90s Calc**
 
-A vanilla JS/TypeScript portfolio project which emulates the look of the [TI-108](https://education.ti.com/en/products/calculators/elementary-calculators/ti-108) calculator. **[See it in action here](https://90scalc.netlify.app/)**.
+A vanilla JS/TypeScript portfolio project which emulates the look of the [TI-108](https://education.ti.com/en/products/calculators/elementary-calculators/ti-108) calculator. **[See it in action here](https://90s-calc.netlify.app/)**.
 
 - [Description](#description)
 - [Installation and setup](#installation-and-setup)
@@ -28,7 +28,7 @@ This project uses [Parcel](https://parceljs.org/) for bundling, building, and lo
 
 ### **Install**
 
-- [Download zip](https://github.com/antmercado94/90scalc/archive/refs/heads/main.zip) or clone: `git clone https://github.com/antmercado94/90scalc.git`
+- [Download zip](https://github.com/antmercado94/90s-calc/archive/refs/heads/main.zip) or clone: `git clone https://github.com/antmercado94/90s-calc.git`
 - Install dependencies using npm: `npm install`
 
 ### **Development**
@@ -87,8 +87,8 @@ A list of other interface buttons providing additional functionality:
 
 New patterns can be added by placing a **.jpg** or **.png** image within the `/images/background/` directory, then adding the file as an export within `/lib/images/index.ts`.
 
-##### Size of pattern images should be **175x175**.
+<sub> Size of pattern images should be **175x175**.<sub>
 
 ## **License**
 
-Code released under [the MIT license](https://github.com/antmercado94/90scalc/blob/main/LICENSE).
+Code released under [the MIT license](https://github.com/antmercado94/90s-calc/blob/main/LICENSE).
