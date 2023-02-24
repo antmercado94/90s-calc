@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>90s Calc</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <script type="module" src="./src/index.ts"></script>
+  </head>
+  <body>
+    <div class="page-background"></div>
+
+    <div class="page-layout flex">
+      <!-- calc -->
+      <section class="calc-section flex flex--center">
+        <!-- container -->
+        <div class="calc-container background-color-blue">
+          <!-- output -->
+          <div class="calc-output background-color-blue--dark">
+            <!-- outer-lcd -->
+            <div class="calc-outer-lcd background-color-grey--dark">
+              <!-- inner-lcd -->
+              <div class="calc-inner-lcd background-color-grey">
+                <!-- inner container -->
+                <div
+                  class="calc-inner-lcd__container ff-output flex flex--center"
+                >
+                  <span class="calc-inner-lcd__posNeg"></span>
+                  <span
+                    id="lcdNum"
+                    type="text"
+                    class="calc-inner-lcd__value text-right text-color-grey"
+                    style="opacity: 0.5"
+                    data-ready="false"
+                    data-op="false"
+                    >12345678.</span
+                  >
+                  <!-- inner container end -->
+                </div>
+                <!-- inner-lcd end -->
+              </div>
+              <!-- outer-lcd end -->
+            </div>
+            <!-- output end -->
+          </div>
+
+          <!-- info -->
+          <div class="info">
+            <!-- info container -->
+            <div class="info-container flex">
+              <!-- info left -->
+              <div>
+                <div class="info-text text-color-white">
+                  <a href="https://antoniomercado.netlify.app/">
+                    <p class="ff-title ff-title--regular">developed by</p>
+                    <p class="ff-title ff-title--bold">antonio mercado</p>
+                  </a>
+                </div>
+                <!-- info panel -->
+                <div
+                  id="playStateBtn"
+                  class="info-panel flex flex--center background-color-black"
+                >
+                  <div class="animation-status flex flex--center">
+                    <svg
+                      width="1.4em"
+                      height="0.968em"
+                      viewBox="0 0 649 308"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M450.107 294.867H389.628C376.935 294.867 367.227 285.158 367.227 272.465L367.232 -3.80137C367.232 -15.7492 376.94 -26.2027 389.633 -26.2027H450.112C462.804 -26.2027 472.513 -15.7496 472.513 -3.80137V273.212C472.508 285.16 462.805 294.863 450.106 294.863L450.107 294.867Z"
+                        fill="#f6f5fa"
+                      />
+                      <path
+                        d="M626.32 294.867H565.841C553.149 294.867 543.44 285.158 543.44 272.465V-3.80137C543.44 -15.7492 553.148 -26.2027 565.841 -26.2027H626.32C639.013 -26.2027 648.721 -15.7496 648.721 -3.80137V273.212C648.721 285.16 638.268 294.863 626.32 294.863V294.867Z"
+                        fill="#f6f5fa"
+                      />
+                      <path
+                        d="M294.8 114.92L34.2133 -35.16C19.2813 -44.1184 0.614624 -32.9204 0.614624 -15.748V285.159C0.614624 302.331 19.2813 313.533 34.2133 304.571L294.8 153.744C309.732 144.786 309.732 123.88 294.8 114.921V114.92Z"
+                        fill="#f6f5fa"
+                      />
+                    </svg>
+                  </div>
+                  <span></span>
+                  <span></span>
+                  <!-- info panel end -->
+                </div>
+                <!-- info left end-->
+              </div>
+              <div class="logo-container">
+                <span class="logo">
+                  <img src="./images/logo/logo.png" alt="90s Calc Logo" />
+                </span>
+              </div>
+              <!-- info container end-->
+            </div>
+            <!-- info end-->
+          </div>
+
+          <!-- interface -->
+          <div class="interface">
+            <!-- interface container -->
+            <div class="interface-container grid">
+              <!-- interface left -->
+              <div class="interface-left grid">
+                <!-- functional btns -->
+                <span
+                  id="posNegBtn"
+                  class="interface-btn interface-btn--sm btn-red"
+                  ><span>+/−</span></span
+                >
+                <span
+                  id="sqRootBtn"
+                  class="interface-btn interface-btn--sm btn-red"
+                  ><span>√</span></span
+                >
+                <span
+                  id="perBtn"
+                  class="interface-btn interface-btn--sm btn-red"
+                  data-key="%"
+                  ><span>%</span></span
+                >
+                <span
+                  id="toggleDrawerBtn"
+                  class="interface-btn interface-btn--sm interface-toggle btn-red"
+                >
+                  <img
+                    src="./images/interface/menu-right.svg"
+                    alt="Toggle drawer"
+                  />
+                </span>
+                <span
+                  id="clearListBtn"
+                  class="interface-btn interface-btn--sm interface-clear btn-red"
+                >
+                  <img
+                    src="./images/interface/clear-all.svg"
+                    alt="Clear List"
+                  />
+                </span>
+                <span
+                  id="bgChangeBtn"
+                  class="interface-btn interface-btn--sm interface-bg"
+                >
+                  <img
+                    src="./images/background/pattern-1.jpg"
+                    alt="Change background"
+                    data-pattern="pattern-1"
+                  />
+                </span>
+                <!-- number pad btns -->
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="7"
+                  data-value="7"
+                  ><span>7</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="8"
+                  data-value="8"
+                  ><span>8</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="9"
+                  data-value="9"
+                  ><span>9</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="4"
+                  data-value="4"
+                  ><span>4</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="5"
+                  data-value="5"
+                  ><span>5</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="6"
+                  data-value="6"
+                  ><span>6</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="1"
+                  data-value="1"
+                  ><span>1</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="2"
+                  data-value="2"
+                  ><span>2</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="3"
+                  data-value="3"
+                  ><span>3</span></span
+                >
+                <span
+                  id="clearBtn"
+                  class="interface-btn interface-btn--sm btn-red"
+                  style="text-transform: uppercase"
+                  data-key="Escape"
+                  >on/c</span
+                >
+                <span
+                  class="interface-btn interface-btn--sm btn-white"
+                  data-key="0"
+                  data-value="0"
+                  ><span>0</span></span
+                >
+                <span
+                  id="decBtn"
+                  class="interface-btn interface-btn--sm btn-white interface-decimal"
+                  data-key="."
+                >
+                  <img src="./images/interface/dot.svg" alt="Decimal"
+                /></span>
+                <!-- interface left end -->
+              </div>
+              <!-- interface right -->
+              <div class="interface-right grid">
+                <!-- operator btns -->
+                <span
+                  class="interface-btn interface-btn--sm operator btn-red"
+                  data-key="/"
+                  data-op="divide"
+                  ><span>÷</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm operator btn-red"
+                  data-key="*"
+                  data-op="multiply"
+                  ><span>×</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm operator btn-red"
+                  data-key="-"
+                  data-op="subtract"
+                  ><span>−</span></span
+                >
+                <span
+                  class="interface-btn interface-btn--sm operator btn-red"
+                  data-key="+"
+                  data-op="add"
+                  ><span>+</span></span
+                >
+                <!-- equals btn -->
+                <span
+                  id="eqBtn"
+                  class="interface-btn interface-btn--lg btn-red"
+                  data-key="="
+                  ><span>=</span></span
+                >
+              </div>
+              <!-- interface container end -->
+            </div>
+            <!-- interface end -->
+          </div>
+
+          <!-- footer -->
+          <div class="calc-footer">
+            <span>
+              <svg
+                fill="#f6f5fa"
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>github</title>
+                <path
+                  d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z"
+                ></path>
+              </svg>
+            </span>
+            <!-- footer end -->
+          </div>
+
+          <!-- container end -->
+        </div>
+        <!-- calc end -->
+      </section>
+
+      <!-- drawer -->
+      <section class="drawer-section drawer-section--open background-color-red">
+        <div class="drawer-container">
+          <ul
+            id="drawerList"
+            class="drawer-list ff-interface text-color-white"
+          ></ul>
+        </div>
+      </section>
+      <!-- page-layout end -->
+    </div>
+  </body>
+</html>

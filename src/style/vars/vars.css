@@ -1,0 +1,24 @@
+/**
+* CSS Variables
+*/
+
+:root {
+  /** colors */
+  --blue-400: #055796;
+  --blue-500: #0d4983;
+  --blue-600: #093a6a;
+  --blue-700: #1a385e;
+  --red-400: #c92b37;
+  --red-500: #a92530;
+  --white-400: #f6f5fa;
+  --white-500: #d4d3dc;
+  --grey-400: #b9b8bd;
+  --grey-500: #4f524b;
+  --grey-600: #27272b;
+  --black-400: #161f1c;
+
+  /** font-family */
+  --ff-interface: "Montserrat", sans-serif;
+  --ff-title: "Anonymous Pro", monospace;
+  --ff-output: "Rajdhani", sans-serif;
+}
