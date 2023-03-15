@@ -1,5 +1,5 @@
 /**
- * A module that parses for certain keypress keys.
+ * Parses string for certain keypress keys.
  * @module parseKey
  * */
 

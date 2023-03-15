@@ -1,3 +1,6 @@
 import App from "./js/App";
 
-const app = new App();
+function main() {
+  const app = new App();
+}
+main();

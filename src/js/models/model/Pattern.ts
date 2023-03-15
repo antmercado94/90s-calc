@@ -2,7 +2,7 @@
 
 /**
  * @class
- * A pattern used for application background.
+ * Represents a Pattern object
  */
 export default class Pattern {
   name!: string;
@@ -14,16 +14,18 @@ export default class Pattern {
    */
   constructor(url: string) {
     this.url = url;
-    this._parsePatternName(this.url);
+    this.#parsePatternName(this.url);
   }
 
   /**
    * Parse url for pattern name.
    * @param {string} url The src url for the pattern image.
-   * @returns {string} The name of the pattern.
+   * @this {Object} Pattern instance
+   * @returns {string} The string with pattern name.
    */
-  _parsePatternName(url: string) {
+  #parsePatternName(url: string) {
     this.name = url.split("/").pop()!.split(".")[0]!;
+
     return this.name;
   }
 }

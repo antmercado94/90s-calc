@@ -172,6 +172,7 @@ body {
   border-bottom: 0.125em solid var(--blue-600);
 }
 .info-text {
+  max-width: fit-content;
   font-size: 0.969em;
   letter-spacing: -0.1em;
   line-height: 1em;
@@ -294,9 +295,9 @@ body {
 }
 /** footer */
 .calc-footer {
+  max-width: fit-content;
   padding-block-start: 0.313em;
   padding-block-end: 0.5em;
-  /* margin-inline: 1.188em; */
   margin-inline: 0.85em;
 }
 .calc-footer span {

@@ -2,6 +2,7 @@
  * Imported pattern images
  * @module images
  * */
+
 export { default as Pattern1 } from "../../../../images/background/pattern-1.jpg";
 export { default as Pattern2 } from "../../../../images/background/pattern-2.jpg";
 export { default as Pattern3 } from "../../../../images/background/pattern-3.jpg";
