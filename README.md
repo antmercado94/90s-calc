@@ -85,7 +85,7 @@ A list of other interface buttons providing additional functionality:
 
 ### **Adding/Removing Patterns**
 
-New patterns can be added by placing a **.jpg** or **.png** image within the `/images/background/` directory, then adding the file as an export within `/lib/images/index.ts`.
+New patterns can be added by placing a **.jpg** or **.png** image within the [`/images/background/`](https://github.com/antmercado94/90s-calc/tree/main/images/background) directory, then adding the file as an export within [`/src/js/lib/images/index.ts`](https://github.com/antmercado94/90s-calc/tree/main/src/js/lib/images).
 
 <sub> Size of pattern images should be **175x175**.<sub>
 
