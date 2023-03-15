@@ -172,6 +172,7 @@ body {
   border-bottom: 0.125em solid var(--blue-600);
 }
 .info-text {
+  max-width: fit-content;
   font-size: 0.969em;
   letter-spacing: -0.1em;
   line-height: 1em;
