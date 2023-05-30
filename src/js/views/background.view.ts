@@ -29,7 +29,7 @@ export class BackgroundView {
    * @returns {this}
    */
   restartAnimation() {
-    if (this.#backgroundEl.classList.contains("paused"))
+    if (!this.#backgroundEl.classList.contains("paused"))
       this.#backgroundEl.classList.remove("paused");
 
     return this;
